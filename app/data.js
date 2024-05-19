@@ -18,16 +18,16 @@ const projects = [
     codeLink: "https://github.com/EzequielMadrid/basic_chat",
   },
   {
-    image: "assets/img/it-news.jpg",
-    type: "IT News",
-    appLink: "https://ezequielmadrid.github.io/it_news/",
-    codeLink: "https://github.com/EzequielMadrid/it_news",
-  },
-  {
     image: "assets/img/hackers-uni.jpg",
     type: "Hackers Uni",
     appLink: "https://ezequielmadrid.github.io/form/",
     codeLink: "https://github.com/EzequielMadrid/form",
+  },
+  {
+    image: "assets/img/it-news.jpg",
+    type: "IT News",
+    appLink: "https://ezequielmadrid.github.io/it_news/",
+    codeLink: "https://github.com/EzequielMadrid/it_news",
   },
   {
     image: "assets/img/todo-list.jpg",

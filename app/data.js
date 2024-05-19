@@ -7,7 +7,7 @@ const projects = [
   },
   {
     image: "assets/img/matrix-effect.jpg",
-    type: "Matrix Effect",
+    type: "Matrix",
     appLink: "https://ezequielmadrid.github.io/matrix_effect/",
     codeLink: "https://github.com/EzequielMadrid/matrix_effect",
   },

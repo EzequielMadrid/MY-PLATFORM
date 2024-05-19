@@ -6,7 +6,7 @@ function createProjectCard(card) {
   image.src = card.image;
   image.alt = `Project`;
   image.className =
-    "w-96 h-42 object-cover border-2 border-gray-200 mb-4 rounded-lg hover:h-60 ";
+    "w-96 h-42 object-cover border-2 border-gray-200 mb-4 rounded-lg";
   article.appendChild(image);
 
   const typeHeading = document.createElement("p");

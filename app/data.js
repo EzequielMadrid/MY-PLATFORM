@@ -31,7 +31,7 @@ const projects = [
   },
   {
     image: "assets/img/todo-list.jpg",
-    type: "My Tasks",
+    type: "Missions",
     appLink: "https://ezequielmadrid.github.io/basic_toDo/",
     codeLink: "https://github.com/EzequielMadrid/basic_toDo",
   },

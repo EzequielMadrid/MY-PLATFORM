@@ -6,13 +6,13 @@ function createProjectCard(card) {
   image.src = card.image;
   image.alt = `Project`;
   image.className =
-    "w-96 h-42 object-cover border-2 border-gray-200 mb-4 rounded-lg ";
+    "w-96 h-42 object-cover border-2 border-gray-200 mb-4 rounded-lg hover:h-60 ";
   article.appendChild(image);
 
   const typeHeading = document.createElement("p");
   typeHeading.textContent = card.type;
   typeHeading.className =
-    "absolute bottom-14 left-4 bg-gray-900 pl-2 rounded-full w-2/6 text-white text-sm";
+    "absolute bottom-9 left-6 pl-2 bg-black rounded-full w-2/6 text-white text-md font-extrabold";
   article.appendChild(typeHeading);
 
   const buttonContainer = document.createElement("div");

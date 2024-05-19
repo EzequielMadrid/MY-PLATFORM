@@ -24,12 +24,6 @@ const projects = [
     codeLink: "https://github.com/EzequielMadrid/it_news",
   },
   {
-    image: "assets/img/tech-store.jpg",
-    type: "Beating Portal",
-    appLink: "https://ezequielmadrid.github.io/tech-store/",
-    codeLink: "https://github.com/EzequielMadrid/tech-store",
-  },
-  {
     image: "assets/img/hackers-uni.jpg",
     type: "Hackers Uni",
     appLink: "https://ezequielmadrid.github.io/form/",

@@ -1,7 +1,7 @@
 const projects = [
   {
     image: "assets/img/resto.jpg",
-    type: "Exotic Restö",
+    type: "Restaurant",
     appLink: "https://ezequielmadrid.github.io/exotic-restaurant/",
     codeLink: "https://github.com/EzequielMadrid/exotic-restaurant",
   },

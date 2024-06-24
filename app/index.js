@@ -1,23 +1,34 @@
+async function fetchProjects() {
+  try {
+    const response = await fetch("data.json");
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    const projects = await response.json();
+    projects.forEach(createProjectCard);
+  } catch (error) {
+    console.error("Error fetching projects:", error);
+  } finally {
+    console.log("Fetch attempt completed");
+  }
+}
+
 function createProjectCard(card) {
   const article = document.createElement("article");
-  article.className = "relative bg-black rounded-md p-2 mr-2 mb-2 ";
-
+  article.className = "relative bg-black rounded-md p-2 mr-2 mb-2";
   const image = document.createElement("img");
   image.src = card.image;
   image.alt = `Project`;
   image.className =
     "w-96 h-42 object-cover border-2 border-gray-200 mb-4 rounded-lg";
   article.appendChild(image);
-
   const typeHeading = document.createElement("p");
   typeHeading.textContent = card.type;
   typeHeading.className =
     "absolute bottom-9 left-6 pl-2 bg-black rounded-full w-2/6 text-white text-md font-extrabold";
   article.appendChild(typeHeading);
-
   const buttonContainer = document.createElement("div");
   buttonContainer.className = "flex text-center";
-
   function createLink(text, className, href) {
     const link = document.createElement("a");
     link.className = className;
@@ -25,24 +36,26 @@ function createProjectCard(card) {
     link.href = href;
     return link;
   }
-
   const webButton = createLink(
     "App",
     "font-bold text-red-500 hover:bg-gray-900 w-full rounded-lg",
     card.appLink
   );
-
   const codeButton = createLink(
     "Code",
     "font-bold text-green-500 hover:bg-gray-900 w-full rounded-lg",
     card.codeLink
   );
-
   buttonContainer.appendChild(webButton);
   buttonContainer.appendChild(codeButton);
-
   article.appendChild(buttonContainer);
   document.getElementById("projects-container").appendChild(article);
 }
+fetchProjects();
 
-projects.forEach(createProjectCard);
+/* fetch('projects.json')
+  .then(response => response.json())
+  .then(projects => {
+    projects.forEach(createProjectCard);
+  })
+  .catch(error => console.error('Error fetching projects:', error)); */

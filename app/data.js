@@ -1,5 +1,11 @@
 const projects = [
   {
+    image: "assets/img/trinity-chat.jpg",
+    type: "Realtime Chat",
+    appLink: "https://ezequielmadrid.github.io/exotic-restaurant/",
+    codeLink: "https://github.com/EzequielMadrid/exotic-restaurant",
+  },
+  {
     image: "assets/img/resto.jpg",
     type: "Restaurant",
     appLink: "https://ezequielmadrid.github.io/exotic-restaurant/",
